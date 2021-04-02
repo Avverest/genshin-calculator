@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import { Button } from 'components/Button/Button';
+import Wrapper from 'components/Wrapper/Wrapper';
+import Card from 'components/Card/Card';
+import Avatar from 'components/Avatar/Avatar';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { Icon } from 'components/Icon/Icon';
+
+const AppStyle = styled.div`
+	display: flex;
+	width: 100vw;
+	min-height: 100vh;
+	flex-direction: column;
+	align-items: center;
+	background-color: #FCF7FB;
+`
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<AppStyle>
+			<h1>Someshit</h1>
+		</AppStyle>
+	);
 }
 
 export default App;
